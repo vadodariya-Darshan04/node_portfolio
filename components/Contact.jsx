@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { siteData } from '@/data/portfolio'
+import * as emailjs from "@emailjs/browser";
 
 const GithubSVG = () => (
   <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
@@ -23,32 +24,31 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setStatus('sending')
+const handleSubmit = async (e) => {
+  e.preventDefault()
+  setStatus('sending')
 
-    try {
-      const emailjs = await import('@emailjs/browser')
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-          to_email: siteData.email,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      setStatus('success')
-      setForm({ name: '', email: '', message: '' })
-      setTimeout(() => setStatus('idle'), 4000)
-    } catch (err) {
-      console.error('EmailJS error:', err)
-      setStatus('error')
-      setTimeout(() => setStatus('idle'), 4000)
-    }
+  try {
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+        to_email: siteData.email,
+      },
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    )
+    setStatus('success')
+    setForm({ name: '', email: '', message: '' })
+    setTimeout(() => setStatus('idle'), 4000)
+  } catch (err) {
+    console.error('EmailJS error:', err)
+    setStatus('error')
+    setTimeout(() => setStatus('idle'), 4000)
   }
+}
 
   const socialIcons = {
     github: <GithubSVG />,
