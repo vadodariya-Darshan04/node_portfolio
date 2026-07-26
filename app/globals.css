@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; cursor: none; overflow-x: hidden; }
+::selection { background: rgba(192,125,70,0.3); color: #ede0cc; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080706; }
+::-webkit-scrollbar-thumb { background: #c07d4640; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #c07d4680; }
+
+/* ── Cursor ── */
+#cursor { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; mix-blend-mode: difference; }
+#cursor-dot { width: 8px; height: 8px; background: #c07d46; border-radius: 50%; position: absolute; transform: translate(-50%,-50%); }
+#cursor-ring { width: 32px; height: 32px; border: 1px solid rgba(192,125,70,0.6); border-radius: 50%; position: absolute; transform: translate(-50%,-50%); transition: width 0.3s, height 0.3s, border-color 0.3s; }
+body.hovering #cursor-ring { width: 48px; height: 48px; border-color: rgba(192,125,70,0.8); }
+body.clicking #cursor-ring { transform: translate(-50%,-50%) scale(0.8); }
+
+/* ── Nav ── */
+#nav { transition: background 0.4s ease, backdrop-filter 0.4s ease, border-bottom 0.4s ease; }
+#nav.scrolled { background: rgba(8,7,6,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(48,44,39,0.5); }
+
+/* ── Noise ── */
+.noise { background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>"); }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  body { cursor: auto; }
+  #cursor { display: none; }
+}
+
+/* ── Form inputs ── */
+input, textarea { caret-color: #c07d46; }
+input:focus, textarea:focus { box-shadow: 0 0 0 1px rgba(192,125,70,0.3); }
+
+/* ── Devicons ── */
+.devicon-amazonwebservices-plain::before { font-size: 1.1rem; }
