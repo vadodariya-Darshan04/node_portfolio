@@ -12,8 +12,8 @@ export const siteData = {
   availabilityText: "Open to opportunities",
   heroDescription:
     "I craft digital experiences at the intersection of elegant design and robust engineering. Building products people love to use.",
-  yearsExperience: 1,
-  projectsCompleted: 3,
+  yearsExperience: 4,
+  projectsCompleted: "4+",
   achievementsCount: 3,
 
   // ── About ──────────────────────────────────
@@ -55,7 +55,6 @@ export const siteData = {
         { name: "HTML", icon: "devicon-html5-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
         { name: "Javascript", icon: "devicon-javascript-plain colored" },
-        { name: "Angular", icon: "devicon-angularjs-plain colored" },
       ],
     },
     {
@@ -82,6 +81,7 @@ export const siteData = {
         { name: "C++", icon: "devicon-cplusplus-plain colored" },
         { name: "Java", icon: "devicon-java-plain colored" },
         { name: "Python", icon: "devicon-python-plain colored" },
+      
       ],
     },
     {
@@ -109,7 +109,6 @@ export const siteData = {
         { name: "Machine Learning", icon: "devicon-python-plain colored" },
         { name: "Pandas", icon: "devicon-pandas-plain colored" },
         { name: "NumPy", icon: "devicon-numpy-plain colored" },
-        { name: "TensorFlow", icon: "devicon-tensorflow-original colored" },
       ],
     },
   ],
@@ -122,39 +121,15 @@ export const siteData = {
       tagline: "Your Dream Place",
       description:
         "Developed a modern visa consultancy management platform for Syntrofia Overseas Consultant featuring a responsive user interface, secure authentication system, and an efficient admin dashboard to streamline user inquiries, application management, and consultancy operations.",
-      tech: ["Flutter", "Dart", "Python", "Django REST Framework", "SQLite"],
-      github: "https://github.com/vadodariya-darshan",
+      tech: ["PHP","MySQL","HTML","CSS","Javascript"],
+      github: "https://github.com/vadodariya-Darshan04/Your-Dream-Place",
       live: "",
       status: "live",
       year: "2024",
       image: "/images/projects/soc.png",
     },
-    {
-      num: "02",
-      title: "Medi Track",
-      tagline: "Smart Healthcare Management",
-      description:
-        "A comprehensive healthcare management application built with Flutter and Django REST Framework. Features include patient records, appointment scheduling, medication tracking, and real-time notifications to streamline healthcare operations.",
-      tech: ["Flutter", "Dart", "Python", "Django REST Framework", "SQLite"],
-      github: "https://github.com/vadodariya-darshan",
-      live: "",
-      status: "live",
-      year: "2024",
-      image: "/images/projects/meditrack.png",
-    },
-    {
-      num: "03",
-      title: "AI Study Companion",
-      tagline: "Intelligent Learning Platform",
-      description:
-        "An AI-powered study companion that personalizes learning experiences using machine learning algorithms. Features adaptive quizzes, smart note summarization, and progress tracking to help students learn more efficiently.",
-      tech: ["Python", "Django", "Machine Learning", "Pandas", "NumPy"],
-      github: "https://github.com/vadodariya-darshan",
-      live: "",
-      status: "wip",
-      year: "2025",
-      image: "",
-    },
+    
+    
   ],
 
   // ── Achievements ───────────────────────────
@@ -226,7 +201,7 @@ export const siteData = {
 
   // ── Socials ────────────────────────────────
   socials: [
-    { platform: "github", label: "GitHub", url: "https://github.com/vadodariya-darshan" },
-    { platform: "linkedin", label: "LinkedIn", url: "https://linkedin.com/in/darshan-vadodariya" },
+    { platform: "github", label: "GitHub", url: "https://github.com/vadodariya-Darshan04" },
+    { platform: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/darshan-vadodariya-713388365/" },
   ],
 }
