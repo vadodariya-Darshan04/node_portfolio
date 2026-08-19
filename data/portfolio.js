@@ -6,14 +6,14 @@ export const siteData = {
   // ── Personal Info ──────────────────────────
   name: "Darshan Vadodariya",
   tagline: "Full-Stack Developer & Creative Technologist",
-  email: "vadodariyaD@gmail.com",
+  email: "drvadodariya10@gmail.com",
   location: "Gujarat, India",
   availability: true,
   availabilityText: "Open to opportunities",
   heroDescription:
     "I craft digital experiences at the intersection of elegant design and robust engineering. Building products people love to use.",
   yearsExperience: 4,
-  projectsCompleted: "4+",
+  projectsCompleted: 4,
   achievementsCount: 3,
 
   // ── About ──────────────────────────────────
@@ -22,11 +22,7 @@ export const siteData = {
     bio1: "I'm an enthusiastic MSc-IT student at GLS University, Ahmedabad, with a solid foundation in mobile application development, web technologies, and database systems. I enjoy picking apart hard problems and engineering solutions that are both technically sound and visually polished.",
     bio2: "Beyond apps, I'm deeply drawn to Full Stack Development — creating end-to-end products where refined frontends meet powerful backends. I'm equally fascinated by Artificial Intelligence and the ways it can be woven into real products to make them smarter and more intuitive.",
     bullets: [
-      "Strong foundation in Flutter & Dart app development",
-      "Hands-on experience with REST APIs, PHP & MySQL",
-      "Proficient in Python, Java, C++ and web technologies",
-      "Exploring Full Stack & AI-powered application development",
-      "Continuous learner — always chasing the next challenge",
+      
     ],
     specialties: [
       {
@@ -109,6 +105,7 @@ export const siteData = {
         { name: "Machine Learning", icon: "devicon-python-plain colored" },
         { name: "Pandas", icon: "devicon-pandas-plain colored" },
         { name: "NumPy", icon: "devicon-numpy-plain colored" },
+        {name : "scikit-learn", icon: "devicon-scikit-learn-plain colored" },
       ],
     },
   ],
@@ -126,7 +123,7 @@ export const siteData = {
       live: "",
       status: "live",
       year: "2024",
-      image: "/images/projects/soc.png",
+      image: "/images/image.png",
     },
     
     
@@ -153,14 +150,7 @@ export const siteData = {
           description: "A fast-paced relay coding event where each team member solved sequential programming challenges under strict time pressure.",
           featured: true,
         },
-        {
-          title: "Code Snap",
-          category: "Snapshot Coding · Team Category",
-          prize: "2nd",
-          prizeLabel: "2nd Prize",
-          description: "Identified and reconstructed program logic from visual code snapshots — a unique blend of visual memory and problem-solving.",
-          featured: false,
-        },
+      
       ],
     },
   ],

@@ -140,7 +140,7 @@ export default function Hero() {
           className="mt-16 flex flex-wrap gap-8 items-center"
         >
           {[
-            { label: 'Years Exp.', refIdx: 0 },
+            { label: 'Years', refIdx: 0 },
             { label: 'Projects', refIdx: 1 },
             { label: 'Achievements', refIdx: 2 },
           ].map((stat, i) => (
