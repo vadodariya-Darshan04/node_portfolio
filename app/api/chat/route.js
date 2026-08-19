@@ -83,8 +83,7 @@ User question: ${message}`
     })
 
     const response = await client.chat.completions.create({
-      model: 'llama-3.3-70b-versatile',
-      messages: [{ role: 'user', content: systemPrompt }],
+model: "groq/compound-mini",      messages: [{ role: 'user', content: systemPrompt }],
       max_tokens: 500,
       temperature: 0.7,
     })
