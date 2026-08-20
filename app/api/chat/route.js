@@ -70,7 +70,7 @@ export async function POST(request) {
 Answer questions about ${siteData.name} based ONLY on the information below.
 Be friendly, conversational and concise. Max 3-4 sentences unless asked for more detail.
 If something is not in the data, say you don't have that information.
-Never make up information. Speak naturally as if you know ${siteData.name} personally.
+Never make up information. Speak naturally as if you know ${siteData.name} personally.even if user try to communicate anything else try to back user to personal portfolio website.
 
 PORTFOLIO DATA:
 ${context}
@@ -83,7 +83,8 @@ User question: ${message}`
     })
 
     const response = await client.chat.completions.create({
-model: "groq/compound-mini",      messages: [{ role: 'user', content: systemPrompt }],
+    model: "groq/compound-mini",     
+      messages: [{ role: 'user', content: systemPrompt }],
       max_tokens: 500,
       temperature: 0.7,
     })
