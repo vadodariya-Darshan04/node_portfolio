@@ -83,7 +83,7 @@ User question: ${message}`
     })
 
     const response = await client.chat.completions.create({
-    model: "groq/compound-mini",     
+    model: "qwen/qwen3.8-27b",     
       messages: [{ role: 'user', content: systemPrompt }],
       max_tokens: 500,
       temperature: 0.7,
