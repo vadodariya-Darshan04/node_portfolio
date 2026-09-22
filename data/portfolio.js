@@ -6,7 +6,7 @@ export const siteData = {
   // ── Personal Info ──────────────────────────
   name: "Darshan Vadodariya",
   tagline: "Full-Stack Developer & Creative Technologist",
-  email: "drvadodariya10@gmail.com",
+  email: "drvadodariya10@gmail.com  ",
   location: "Gujarat, India",
   availability: true,
   availabilityText: "Open to opportunities",
@@ -114,6 +114,19 @@ export const siteData = {
   projects: [
     {
       num: "01",
+      title: "ChargeNow",
+      tagline: "Charge your EV remotely",
+      description:
+        `Experience the future of hassle-free electric vehicle ownership with our innovative on-demand EV charging platform, designed to dispatch mobile charging vans directly to your location. Say goodbye to the frustration of searching for public stations or stressing over driving range. Using our intuitive app, you can effortlessly book a charge, monitor real-time van tracking with live ETAs, and complete secure in-app digital payments. Whether you require emergency roadside assistance or a convenient top-up, our city-wide van dispatch system ensures you're never stranded. Backed by an eco-friendly green charging approach, the platform also features an advanced LLM model trained to predict your vehicle's battery health, helping you keep your EV running at peak performance.`,
+      tech: ["Flutter","Dart","Python","Django REST Framework"],
+      github: "https://github.com/vadodariya-Darshan04/chargenow_backend",
+      live: "",
+      status: "",
+      year: "",
+      image: "/images/projects/ChargeNow.png",
+    },
+    {
+      num: "02",
       title: "SOC - Syntrofia Overseas Consultant",
       tagline: "Your Dream Place",
       description:
@@ -121,11 +134,11 @@ export const siteData = {
       tech: ["PHP","MySQL","HTML","CSS","Javascript"],
       github: "https://github.com/vadodariya-Darshan04/Your-Dream-Place",
       live: "",
-      status: "live",
-      year: "2024",
-      image: "/images/image.png",
+      status: "",
+      year: "",
+      image: "/images/projects/image.png",
     },
-    
+  
     
   ],
 
